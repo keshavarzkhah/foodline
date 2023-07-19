@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icn.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylee.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="scriptt.js"></script>
+    <title>FoodLine | A AI Restaurant</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img class="nav__logo" src="img/logo.png" alt="logo image" id="logo" />
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#features" class="nav__link">How it works</a>
+          </li>
+          <li class="nav__item">
+            <a href="#operations" class="nav__link">Why us?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#not-sure-yet" behavior="smooth" class="nav__link"
+              >Testimonials</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#open__acount"
+              class="nav__link nav__link--btn btn__show-modal"
+              >Order</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__hero">
+        <div class="header__title">
+          <h1>We made it easy to have food</h1>
+          <h4>A new experience in a restaurant</h4>
+          <button class="btn__text btn__scroll-to">
+            Explaine more &DownArrow;
+          </button>
+        </div>
+        <img src="img/heros.png" class="header__img" alt="header image" />
+      </div>
+    </header>
+    <main>
+      <section id="features" class="section">
+        <div class="section__header">
+          <h2 class="section__des">How it works</h2>
+          <h3 class="section__title">Follow these steps and relax</h3>
+        </div>
+        <div class="section__content">
+          <img
+            src="img/scan_qr.jpg"
+            data-src="img/scan_qr.jpg"
+            class="features__img lazy-img"
+          />
+          <div class="features-feature">
+            <div class="features__icon">
+              <ion-icon class="icons" name="qr-code-outline"></ion-icon>
+            </div>
+            <h5 class="features__title">Scan the QR</h5>
+            <p class="features__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              alias sint quos? Accusantium a fugiat porro reiciendis saepe
+              quibusdam debitis ducimus.
+            </p>
+          </div>
+          <div class="features-feature">
+            <div class="features__icon">
+              <ion-icon class="icons" name="mic-outline"></ion-icon>
+            </div>
+            <h5 class="features__title">Say what you like to eat</h5>
+            <p>
+              when you start to order, you can ask for full menu and meals with
+              complete detail.
+            </p>
+          </div>
+          <img
+            src="img/talk.jpg"
+            data-src="img/talk.jpg"
+            class="features__img lazy-img"
+          />
+
+          <img
+            src="img/pay.jpg"
+            data-src="pay.jpg"
+            class="features__img lazy-img"
+          />
+          <div class="features-feature">
+            <div class="features__icon">
+              <ion-icon class="icons" name="bag-check-outline"></ion-icon>
+            </div>
+            <h5 class="features__title">Place order and Pay</h5>
+            <p>
+              To add another person, just say'add another person' and when you
+              are done Just say'place order' and when your order submitted you
+              can pay
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="operations" class="section">
+        <div class="section__header">
+          <h2 class="section__des">Why us?</h2>
+          <h3 class="section__title">We made it simple and fast</h3>
+        </div>
+        <div class="operations">
+          <div class="operations__tabs">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            >
+              <span>01</span>Fast order
+            </button>
+            <button class="btn operations__tab operations__tab--2" data-tab="2">
+              <span>02</span>Various meals
+            </button>
+            <button class="btn operations__tab operations__tab--3" data-tab="3">
+              <span>03</span>Easy pay
+            </button>
+          </div>
+          <div
+            class="operations__content operations__content--1 operations__content--active"
+          >
+            <div class="operations__icon operations__icon--1">
+              <ion-icon class="icons" name="speedometer-outline"></ion-icon>
+            </div>
+            <h5 class="operations__header">
+              Place an order without waiting time
+            </h5>
+            <p>
+              you can easily and immediately place an order through your
+              application and just wait for your order preparation.
+            </p>
+          </div>
+          <div class="operations__content operations__content--2">
+            <div class="operations__icon operations__icon--2">
+              <ion-icon class="icons" name="fast-food-outline"></ion-icon>
+            </div>
+            <h5 class="operations__header">
+              Choose and customize your order from our international menu
+            </h5>
+            <p>
+              We offer a complete menu from all countries and you can customize
+              it easily according to your taste.
+            </p>
+          </div>
+          <div class="operations__content operations__content--3">
+            <div class="operations__icon operations__icon--3">
+              <ion-icon class="icons" name="card-outline"></ion-icon>
+            </div>
+            <h5 class="operations__header">Easy, fast and secure payment</h5>
+            <p>
+              When you are sure about your order, you can pay immediately using
+              your card through our App.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="not-sure-yet" class="section">
+        <div class="section__header">
+          <h2 class="section__des">Testimonials</h2>
+          <h3 class="section__title">
+            Look at our customer's opinions about us
+          </h3>
+        </div>
+        <div class="slider">
+          <div class="slider__content slide--1">
+            <div class="testimonail">
+              <h5 class="slider__header">
+                The last step to becoming a complete minimalist
+              </h5>
+              <blockquote class="testimonail__text">
+                Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                laborum. Incidunt numquam perferendis veritatis neque
+                repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Illo deserunt exercitationem deleniti.
+              </blockquote>
+              <address class="writer">
+                <img
+                  src="img/user-1.jpg"
+                  alt="testi image"
+                  class="testimonial__img"
+                />
+                <div class="writer__info">
+                  <h6 class="testimonial__name">Miyah Miles</h6>
+                  <p class="testimonial__location">London, UK</p>
+                </div>
+              </address>
+            </div>
+          </div>
+          <div class="slider__content slide--2">
+            <div class="testimonail">
+              <h5 class="slider__header">Best financial decision ever!</h5>
+              <blockquote class="testimonail__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </blockquote>
+              <address class="writer">
+                <img
+                  src="img/user-2.jpg"
+                  alt="testi image"
+                  class="testimonial__img"
+                />
+                <h6 class="testimonial__name">Aarav Lynn</h6>
+                <p class="testimonial__location">San Francisco, USA</p>
+              </address>
+            </div>
+          </div>
+          <div class="slider__content slide--3">
+            <div class="testimonail">
+              <h5 class="slider__header">Finally free from old-school banks</h5>
+              <blockquote class="testimonail__text">
+                Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                incidunt commodi architecto numquam omnis nulla autem,
+                necessitatibus blanditiis modi similique quidem. Odio aliquam
+                culpa dicta beatae quod maiores ipsa minus consequatur error
+                sunt, deleniti saepe aliquid quos inventore sequi.
+                Necessitatibus id alias reiciendis, perferendis facere.
+              </blockquote>
+              <address class="writer">
+                <img
+                  src="img/user-3.jpg"
+                  alt="testi image"
+                  class="testimonial__img"
+                />
+                <h6 class="testimonial__name">Francisco Gomes</h6>
+                <p class="testimonial__location">Lisbon, Portugal</p>
+              </address>
+            </div>
+          </div>
+          <button class="btn__slider btn__slider--left">&larr;</button>
+          <button class="btn__slider btn__slider--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+      <section class="section section__signup">
+        <div class="section__header">
+          <h3 class="section__title">
+            The best day to join Bankist was one year ago. The second best is
+            today!
+          </h3>
+        </div>
+        <button class="btn btn__open btn__show-modal">
+          Open your free acount today!
+        </button>
+      </section>
+      <footer class="footer">
+        <ul class="footer__links">
+          <li class="footer__item">
+            <a class="footer__link" href="#">About</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Pricing</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Terms of Use</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Careers</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact us</a>
+          </li>
+        </ul>
+        <img src="img/icon.png" class="footer__logo" alt="logo" />
+        <p class="footer__copyright">
+          &copy; Copyright by
+          <a class="footer__link" href="#" target="_blank">Jonas Schmedtmann </a
+          >Use for learning or your portfolio. Don't use to teach. Don't claim
+          as your own product.
+        </p>
+      </footer>
+      <div class="modal hidden">
+        <button class="btn__close-modal">&times;</button>
+        <h2 class="modal__header">
+          Open a new account <br /><span>to continue</span>
+        </h2>
+        <form class="modal__form">
+          <label>First name</label>
+          <input type="text" />
+          <label>Last name</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="emil" />
+          <button class="btn btn__modal">Next Step &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+  </body>
+</html>
