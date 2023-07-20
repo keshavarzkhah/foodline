@@ -53,7 +53,7 @@ body {
   margin-bottom: 6rem;
 }
 .nav__logo {
-  width: 30%;
+  max-width:10rem
 }
 .nav__links {
   display: flex;
